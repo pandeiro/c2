@@ -35,6 +35,8 @@ To use in Clojure/ClojureScript, add this to your `project.clj`:
 
     [com.keminglabs/c2 "0.0.1-SNAPSHOT"]
 
+For best results, use [Leiningen 2](https://github.com/technomancy/leiningen/wiki/Upgrading) with [lein-cljsbuild](https://github.com/emezeske/lein-cljsbuild).
+
 Testing
 =======
 
@@ -43,7 +45,7 @@ Run
 
     lein midje --autotest
 
-to start a test watcher, which will automatically reload namespaces and run tests when source or test files are changed.   
+to start a test watcher, which will automatically reload namespaces and run tests when source or test files are changed.
 
 For ClojureScript-specific integration testing, use our highly advanced, PhantomJS-powered "list-of-assertions" testing framework:
 
