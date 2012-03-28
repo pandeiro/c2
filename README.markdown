@@ -1,4 +1,3 @@
-
       _____   ___  
      / ____| |__ \ 
     | |         ) |
@@ -34,6 +33,10 @@ The VREPL doesn't contain any ClojureScript---nice ClojureScript support+example
 To use from Clojure, add this to your `project.clj`:
 
     [com.keminglabs/c2 "0.0.1"]
+    
+It is also recommended to skip AOT compilation, which can be specified in `project.clj` as well:
+
+    :main ^{:skip-aot true} [your project's ns with -main]
 
 Roadmap
 =======
